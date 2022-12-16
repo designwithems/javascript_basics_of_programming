@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Javascript As Basic Programming</h1>
+    <h2>Age Calculations</h2>
+    <h3>Thank you for your cooperation</h3>
+    <button onclick="display()" value="Start">Click this button</button>
+    <input type="checkbox" name="age" id="ages">
+
+<script>
+let firstName = prompt("Please input your first name");
+if (firstName) {
+  alert("Hello " + firstName + "! How are you today?");
+}
+
+let lastName = prompt("Please input your last name");
+if (lastName) {
+    alert("Hello " + firstName+ " "+ lastName + "! Thanks for telling me your full name");
+}
+
+let Address = prompt("Please input your Address name");
+if (Address) {
+    alert("Souka? "+ Address + " I hope I can visit");
+}
+
+function display (){
+var Age = prompt("What's your Age?");
+var Age = parseInt(Age)
+//categorize
+cat = ["Infant", "Toddler", "Child", "Teen", "Adult", "Middle Age Adult", "Senior Adult"]
+var str = "";
+    if (Age >= 0 && Age <= 1){
+        alert (cat [0]);
+    } else if (Age >= 2 && Age <= 4 ){
+        alert (cat [1]);
+    } else if (Age >= 5 && Age <= 12){
+        alert (cat [2]);
+    } else if (Age >= 13 && Age <= 19){
+        alert (cat [3]);
+    } else if (Age >= 20 && Age <= 39){
+        alert (cat [4]);
+    } else if (Age >= 40 && Age <= 59){
+        alert (cat [5]);
+    } else if (Age >= 60){
+        alert (cat [6]);
+    } else (Age != null )
+        alert("Try to enter data")
+}
+</script>
+
+</body>
+</html>
